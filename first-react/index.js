@@ -1,0 +1,1 @@
+ReactDOM.render(<ul><li>dog</li><li>cat</li><li>mouse</li></ul>, document.getElementById("root"))
