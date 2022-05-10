@@ -4,6 +4,7 @@
 
 body {
     margin: 0px;
+    background-color: #282D35;
 }
 
 .nav-block {
@@ -35,3 +36,46 @@ body {
     font-style: normal;
     font-weight: 600;
 }
+
+.main-block {
+    padding: 80px 35px;
+    position: relative;
+    background-image: url(./images/reactjs-icon\ 2.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    color: white;
+}
+
+.main-block > h1 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.06px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+    margin: 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ul li {
+    padding-block: 10px;
+    max-width: 400px;
+}
+
+ul li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+}
+
+.points-block {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
