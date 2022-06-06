@@ -1,3 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  padding: 20px 36px;
+}
+
+/* HERO */
+
+.hero--main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+}
+
+.hero--grid {
+  margin: auto;
+  max-width: fit-content;
+}
+
+.hero--header {
+  font-size: 36px;
+}
+
+.hero--para {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* Card */
+
+.card {
+  padding: 0px 20px;
+  max-width: fit-content;
+}
+
+.card--pic {
+  position: relative;
+}
+
+.card--ticket-status {
+  position: absolute;
+  background-color: #fff;
+  padding: 3px 5px;
+  margin: 0;
+  border-radius: 4px;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #222222;
+}
+
+.card--reviews {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.card--rating {
+  margin-left: 3px;
+  color: #000;
+}
+
+.card--reviews {
+  color: #918E9B;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: baseline;
+}
+
+.card--payment {
+  display: flex;
+}
+
+.card--quantity {
+  font-weight: 300;
+}
+
+.card--title {
+  margin: 0;
+}
+
+.card--quantity {
+  margin: 0;
+}
+
+.card--price {
+  font-weight: 600;
   margin: 0;
 }
