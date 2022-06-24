@@ -1,10 +1,22 @@
 import React from 'react'
 
-const Card = ({coverImg, rating, reviewCount, location, title, price}) => {
+const Card = ({coverImg, rating, reviewCount, location, title, price, openSpots}) => {
+    
+    let badgeText
+    if (openSpots === 0) {
+        badgeText = 'SOLD OUT'
+    } else if (location === 'Online') {
+        badgeText = 'Online'
+    }
+
     return (
         <div className='card'>
             <div className='card--pic'>
-                <span className='card--ticket-status'>Sold Out</span>
+                {openSpots === 0 ? 
+                    (<span className='card--ticket-status'>{badgeText}</span>)
+                    :
+                    (<span className='card--ticket-status'>{badgeText}</span>)
+                }
                 <img src={coverImg} alt="katie pic" />
             </div>
             <div className='card--reviews'>

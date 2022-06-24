@@ -46,6 +46,16 @@ body {
   max-width: fit-content;
 }
 
+.card--scroll {
+  display: flex;
+  /* position: absolute; */
+  margin-left: auto;
+  margin-right: auto;
+  flex: 0 0 auto;
+  width: 55%;
+  overflow-x: auto;
+}
+
 .card--pic {
   position: relative;
 }
