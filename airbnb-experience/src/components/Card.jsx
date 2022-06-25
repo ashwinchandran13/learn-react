@@ -7,16 +7,18 @@ const Card = ({coverImg, rating, reviewCount, location, title, price, openSpots}
         badgeText = 'SOLD OUT'
     } else if (location === 'Online') {
         badgeText = 'Online'
+    } else {
+        badgeText = null;
     }
 
     return (
         <div className='card'>
             <div className='card--pic'>
-                {openSpots === 0 ? 
+                {badgeText && (openSpots === 0 ? 
                     (<span className='card--ticket-status'>{badgeText}</span>)
                     :
                     (<span className='card--ticket-status'>{badgeText}</span>)
-                }
+                )}
                 <img src={coverImg} alt="katie pic" />
             </div>
             <div className='card--reviews'>
