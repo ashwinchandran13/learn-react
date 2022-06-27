@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({coverImg, rating, reviewCount, location, title, price, openSpots}) => {
+const Card = ({coverImg, stats, reviewCount, location, title, price, openSpots}) => {
     
     let badgeText
     if (openSpots === 0) {
@@ -23,8 +23,8 @@ const Card = ({coverImg, rating, reviewCount, location, title, price, openSpots}
             </div>
             <div className='card--reviews'>
                 <img src={'images/starr.png'} height='14px' width='14px' alt="star pic" />
-                <span className='card--rating'>{rating}</span>
-                <span className='card--reviews'>({reviewCount})&#x000B7;{location}</span>
+                <span className='card--rating'>{stats.rating}</span>
+                <span className='card--reviews'>({stats.reviewCount})&#x000B7;{location}</span>
             </div>
             <p className='card--title'>{title}</p>
             <span className='card--payment'>
