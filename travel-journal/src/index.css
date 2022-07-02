@@ -1,0 +1,26 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  min-height: 55px;
+  width: 100%;
+  background-color: #F55A5A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+  color: #fff;
+  padding: 10px;
+}
