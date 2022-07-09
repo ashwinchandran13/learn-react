@@ -38,3 +38,36 @@ header {
   padding-right: 2rem;
 }
 
+main {
+  padding: 5rem 10rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.form--inputField {
+  width: 230px;
+  padding: 0.7rem 0.5rem;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  margin: 6px
+}
+
+.form--submitBtn {
+  grid-column: span 2;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  color: #ffffff; 
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+}
+
