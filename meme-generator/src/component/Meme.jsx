@@ -4,7 +4,8 @@ import data from '../memesData';
 const Meme = () => {
 
     function handleClick () {
-        console.log(data[Math.floor(Math.random() * 3)].url);
+      const totalMeme = data.length;
+      console.log(data[Math.floor(Math.random() * totalMeme)].url);
     }
     
   return (
