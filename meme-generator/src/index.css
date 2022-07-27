@@ -42,7 +42,7 @@ main {
   padding: 5rem 10rem;
 }
 
-form {
+.form--container {
   display: grid;
   grid-template-columns: auto auto;
   align-content: center;
@@ -71,3 +71,7 @@ form {
   font-family: 'Karla', sans-serif;
 }
 
+.form--meme-image {
+  max-width: 100%;
+  margin-top: 5rem;
+}
