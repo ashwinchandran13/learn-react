@@ -39,7 +39,9 @@ header {
 }
 
 main {
-  padding: 5rem 10rem;
+  padding: 36px;
+  display: flex;
+  justify-content: center;
 }
 
 .form--container {
@@ -47,6 +49,7 @@ main {
   grid-template-columns: auto auto;
   align-content: center;
   justify-content: center;
+  max-width: 30%;
 }
 
 .form--inputField {
@@ -71,7 +74,40 @@ main {
   font-family: 'Karla', sans-serif;
 }
 
-.form--meme-image {
-  max-width: 100%;
+.meme {
+  position: relative;
   margin-top: 5rem;
+  left: 50%;
+}
+
+.meme > .form--meme-image {
+  max-width: 100%;
+}
+
+.meme > .meme--text {
+  position: absolute;
+  padding: 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
 }
