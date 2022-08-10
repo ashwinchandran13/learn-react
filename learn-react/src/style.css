@@ -4,14 +4,57 @@
 
 body {
     margin: 0px;
+}
+
+.app {
+    height: 100vh;
+}
+
+.light-app {
+    background-color: #fff;
+}
+
+.dark-app {
     background-color: #282D35;
 }
 
 .nav-block {
     display: flex;
     padding: 30px 25px;
-    background-color: #21222A;
     justify-content: space-between;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.521);
+}
+
+.dark-mode {
+    background-color: #21222A;
+}
+
+.light-mode {
+    background-color: #fff;
+}
+
+.light-mode .menu-container--dark-mode-text {
+    color: rgb(122 118 118);
+}
+
+.light-mode .menu-container--light-mode-text {
+    color: #000;
+}
+
+.dark-mode .menu-container--dark-mode-text {
+    color: #fff;
+}
+
+.dark-mode .menu-container--light-mode-text {
+    color: rgb(122 118 118);
+}
+
+.light-mode .menu p {
+    color: #000;
+}
+
+.dark-mode .menu p {
+    color: #DEEBF8;
 }
 
 .page-title {
@@ -28,27 +71,53 @@ body {
 
 .menu-container {
     display: flex;
+    align-items: center;
 }
 
-.menu-container .menu p {
-    color: #DEEBF8;
+.menu-container--mode-btn {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.menu-container-mode-box {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    margin-right: 1rem;
+}
+
+.menu {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
 }
 
+.light-main h1{
+    color: #000;
+
+}
+.light-main .points-block {
+    color: #000;
+}
+
+.dark-main h1{
+    color: #fff;
+
+}
+.dark-main .points-block {
+    color: #fff;
+}
+
 .main-block {
     padding: 80px 35px;
     position: relative;
-    background-image: url(./images/reactjs-icon\ 2.png);
+    background-image: url(../public/images/reactjs-icon\ 2.png);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: center;
-    color: white;
 }
 
 .main-block > h1 {
-    color: #FFF;
     font-style: normal;
     font-weight: 700;
     font-size: 39.06px;
@@ -76,6 +145,5 @@ ul li::marker {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Main = () => {
+const Main = (props) => {
+  const { lightMode } = props;
+  const mode = lightMode ? 'light-main' : 'dark-main';
+
   return (
-    <div className='main-block'>
+    <div className={`main-block ${mode}`}>
       <h1>Fun facts about React</h1>
       <ul className='points-block'>
         <li>Was first released in 2013</li>
